@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Ballet
+- Font Author: Copyright 2020 The Ballet Project Authors (https://github.com/Omnibus-Type/Ballet)
+- Font Source: http://fonts.gstatic.com/s/ballet/v27/QGYyz_MYZA-HM4NjuGOVnUEXme1I4Xi3C4G-EiAou6Y.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
