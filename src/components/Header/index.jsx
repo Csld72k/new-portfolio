@@ -8,17 +8,21 @@ export function Header() {
       <nav>
         <div className="nav">
           <ul>
-            <li>About.me</li>
-            <li>Projects</li>
-            <li>Education</li>
-            <li>Knowledge</li>
+            <li><a href="#">About.me</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Knowledge</a></li>
           </ul>
 
           <div className="diamond-bar">
             <div>
-              <BsDiamond className="external-diamond" />
-              <BsDiamondFill className="internal-diamond" />
-              <span className="line"></span>
+              <span className="fixed-line"></span>
+              <span className="slider-line projects"></span>
+              <BsDiamond className="external-diamond about-me" />
+              <BsDiamond className="external-diamond projects" />
+              <BsDiamond className="external-diamond education" />
+              <BsDiamond className="external-diamond knowledge" />
+              <BsDiamondFill className="internal-diamond projects" />
 
             </div>
           </div>
