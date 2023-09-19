@@ -9,14 +9,10 @@ export const Container = styled.header`
   justify-content: space-between;
   position: relative;
 
-  /* background: purple; */
-
   nav {
     font-size: 2rem;
 
     .nav {
-      /* display: flex; */
-      /* font-size: 2rem; */
       /* background-color: red; */
 
       ul {
@@ -37,8 +33,6 @@ export const Container = styled.header`
         height: 2rem;
         position: relative;
         
-        /* background-color: purple; */
-
         // Here it defines the position of the navigation menu indicator
         .external-diamond {
           padding: .2rem;
@@ -47,13 +41,15 @@ export const Container = styled.header`
           left: 10%;
           transform: translate(-50%, -50%);
 
-          font-size: 1.7rem;
+          font-size: 1.4rem;
 
+          fill: ${({ theme }) => theme.COLORS.BLACK};
 
-          /* background-color: #000; */
-          background-color: #000;
-          background-clip: content-box;
-          border-radius: 50%;
+          &.background {
+            font-size: 1.7rem;
+            
+            fill: ${({ theme }) => theme.COLORS.WHITE};
+          }
 
           &.about-me {
             left: 10%;
@@ -102,36 +98,21 @@ export const Container = styled.header`
           position: absolute;
           top: 37%;
           left: 10.5%;
-          /* z-index: 0; */
-          /* display: none; */
-          /* background: ${({ theme }) => theme.COLORS.GRAY}; */
 
           background: linear-gradient(180deg, ${({ theme }) => theme.COLORS.GRAY_LIGHT} 0%, ${({ theme }) => theme.COLORS.GRAY} 40%, ${({ theme }) => theme.COLORS.GRAY} 60%, ${({ theme }) => theme.COLORS.GRAY_LIGHT} 100%);
         }
 
-        /*.line {
-          height: .5rem;
-          width: 75.5%;
-          position: absolute;
-          top: 37%;
-          left: 11.8%;
-
-
-          background: linear-gradient(180deg, ${({ theme }) => theme.COLORS.GRAY_LIGHT} 0%, ${({ theme }) => theme.COLORS.GRAY} 40%, ${({ theme }) => theme.COLORS.GRAY} 60%, ${({ theme }) => theme.COLORS.GRAY_LIGHT} 100%);
-          }*/
-
         .slider-line {
-          height: .2rem;
-          /* width: 79%; */
-          width: 24%;
+          height: .3rem;
+          width: 0%;
           position: absolute;
-          top: 45%;
+          top: 42%;
           left: 10.5%;
 
           background-color: ${({ theme }) => theme.COLORS.WHITE};
 
           &.about-me {
-            width: 0;
+            width: 0%;
           }
 
           &.projects {
@@ -159,6 +140,8 @@ export const Container = styled.header`
     
     font-family: 'Srisakdi', cursive;
     font-weight: bold;
+
+    cursor: default;
   }
 
   .social-media {
@@ -173,12 +156,13 @@ export const Container = styled.header`
       gap: 3rem;
 
       li {
-        /* width: 5rem;
-        height: 5rem; */
+        cursor: pointer;
 
         svg{
           width: 2.5rem;
           height: 2.5rem;
+          
+          color: ${({ theme }) => theme.COLORS.WHITE};
         }
       }
     }
